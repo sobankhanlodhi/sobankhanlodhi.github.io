@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box
+}
+html{
+    height:100%
+}
+header{
+    padding-bottom:15px
+}
+body{
+    font-family:'Source Sans Pro', Trebuchet MS, sans-serif;
+    background:#eedcff;
+    position:relative;
+    min-height:100%
+}
+img{
+    max-width:100%;
+    height:auto
+}
+svg{
+    height:150px
+}
+.Title{
+    font-size:96px;
+    padding-top:10px;
+    text-align:center;
+    margin:0 20px
+}
+.Subtitle{
+    text-align:center;
+    font-size:24px;
+    margin:0 10px
+}    
