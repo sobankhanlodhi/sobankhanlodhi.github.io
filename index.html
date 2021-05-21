@@ -2,13 +2,115 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">    
+    <!--  CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/loading-anime.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link type="text/css" media="all" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/jquery.animatedheadline.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/style.css" rel="stylesheet">
+    
     <title>Soban Khan Lodhi</title>
 </head>
-<body>
+<body class="dark bgimage">
+    <div class="page">
+        <header id="header">
+            <div class="nav-container">
+                <div>
+                    <!-- Mobile Navigation Starts -->
+                    <ul id="nav" class="navigation">
+                        <li class="active">
+                            <div>
+                                <a id="link-home" href="#home" class="active">
+                                    <i class="fa fa-home"></i><span>Home</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a id="link-about" href="#about">
+                                    <i class="fa fa-user"></i><span>About me</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a id="link-work" href="#work">
+                                    <i class="fa fa-briefcase"></i><span>Portfolio</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a id="link-contact" href="#contact">
+                                    <i class="fa fa-envelope-open"></i><span>Get in touch</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a id="link-blog" href="#blog">
+                                    <i class="fa fa-comments"></i><span>Certificates</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Mobile Navigation Ends -->
+                </div>
+            </div>
+            <!-- Stretchy Navigation Starts -->
+            <div class="cd-stretchy-nav">
+                <a class="cd-nav-trigger" href="#0">
+                    <span aria-hidden="true"></span>
+                </a>
+                <ul class="stretchy-nav">
+                    <li class="active"><a href="#home"><span>Home</span></a></li>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#works"><span>Portfolio</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                    <li><a href="#blog"><span>Certificates</span></a></li>
+                </ul>
+                <span aria-hidden="true" class="stretchy-nav-bg"></span>
+            </div>
+            <!-- Stretchy Navigation Ends -->
+        </header>
+
+        <main id="main">
+            <!-- Home Section Starts -->
+            <section id="home" class="active">
+                <!-- Text Rotator Starts -->
+                <div class="main-text-container">
+					<img class="leftimagepicture" src="img/leftimage-dark.jpg" alt=""/>
+                    <div class="main-text" id="selector">
+                        <h3>Hello World !</h3>
+                        <h1 class="ah-headline">
+					I'm
+						<span class="ah-words-wrapper">
+                            <b class="is-visible">soban khan</b>
+							<b>a software engineer</b>
+							<b>a full stack developer</b>
+							<b>a freelancer</b>
+							<b>a life-long learner</b>
+						</span>
+					</h1>
+                        <p>I'm an Aspiring Software Engineer and Developer based in Lahore, Pakistan. I like Learning and making pretty stuff out of code.</p>
+                        <div class="call-to-actions-home">
+                            <div class="text-left">
+                                <a href="#about" class="btn link-portfolio-one"><span><i class="fa fa-user"></i>more about me</span></a>
+                                <a href="#work" class="btn btn-secondary link-portfolio-two"><span><i class="fa fa-suitcase"></i>portfolio</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Rotator Ends -->
+            </section>
+        </main>
+    </div>
+    <!-- Preloader Starts -->
     <div class="preloader">
         <div class="loading">
             <div class="block">&nbsp;</div>
@@ -18,16 +120,14 @@
             <div class="block">&nbsp;</div>
         </div>
     </div>
-    <header>
-        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="TopSvg">
-        <h1 class="Title">Hello World, I'm Soban!</h1>
-        <p class="Subtitle">I like Learning and making pretty stuff out of code &lt;3 
-            <br><br><br><br><br><br>Site Will Be Updated Soon...</br>
-        </p>
-    </header>
-
-
+    <!-- Preloader Ends -->        
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
     <script src="js/loading-anime.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/transformation.js"></script>
+    <script src="js/customized.js"> </script>    
 </body>
 </html>
 
