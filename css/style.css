@@ -1528,3 +1528,219 @@ body.light .personal-info ul h6 {
 .btn-resume {
   margin-top: 30px;
 }
+
+/* CONTACT
+================================================== */
+
+.contact {
+  margin-top: -10px;
+}
+
+/*** Left Side ***/
+
+.contact-container .contact .leftside {
+  font-size: 16px;
+}
+
+.leftside p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-top: -10px;
+}
+
+.custom-list li {
+  position: relative;
+}
+
+.custom-list h6 {
+  margin: 5px 0 0;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.custom-list h6 i {
+  padding-right: 10px;
+}
+
+.custom-list h6 i.fs-14 {
+  font-size: 14px;
+}
+
+.custom-list li:not(:last-child) {
+  padding-bottom: 25px;
+}
+
+.custom-list li span.contact-title {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: .8;
+}
+
+.custom-list li span.contact-content {
+  position: absolute;
+  left: 28px;
+  top: 29px;
+  text-transform: lowercase;
+  font-family: 'open sans';
+  font-weight: 500;
+}
+
+.contact hr {
+  margin: 25px 0;
+}
+
+/* Social Media Icons */
+
+.social {
+  margin-top: 28px;
+}
+
+.social h6 {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: .8;
+}
+
+ul.social-intro {
+  margin: 0;
+  display: inline-block;
+}
+
+.social-intro li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.social-intro li:not(:last-child) {
+  margin-right: 15px;
+}
+
+ul.social-intro li a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  transition: 0.3s;
+}
+
+ ul.social-intro li a i {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+ul.social-intro li a:hover i {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  color: #fff;
+}
+
+/*** Right Side ***/
+
+.contact-container .contact .rightside h6 {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
+.contact-container .contact .rightside p {
+  margin: 0 0 24px !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.contact-container .contact .rightside .input-field {
+  margin-bottom: 24px;
+}
+
+.contact-container .contact .rightside .submit-form {
+  padding-left: 0;
+}
+
+.contact-container .contact .rightside .form-message {
+  margin: 24px 0;
+  padding-left: 0;
+}
+
+.contact-container .contact .rightside form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-container .contact .rightside form .form-group input[type=text],
+.contact-container .contact .rightside form .form-group input[type=email],
+.contact-container .contact .rightside form .form-group textarea {
+  border-radius: 30px;
+  outline: none;
+  box-shadow: none !important;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-container .contact .rightside form .form-group input[type=text],
+.contact-container .contact .rightside form .form-group input[type=email] {
+  height: 46px;
+  padding-left: 49px;
+}
+
+.contact-container .contact .rightside form .form-group i {
+  position: absolute;
+  left: 36px;
+  top: 15px;
+  font-size: 16px;
+  opacity: .3;
+}
+
+.contact-container .contact .rightside .form-group textarea {
+  height: 130px;
+  padding: 12px 0 15px 49px;
+}
+
+.contact-container .contact .rightside form .output_message {
+  display: block;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 6px;
+}
+
+.contact-container .contact .rightside form .output_message.success {
+  background: #28a745;
+}
+
+.contact-container .contact .rightside form .output_message.success:before {
+  font-family: FontAwesome;
+  content: "\f14a";
+  padding-right: 10px;
+}
+
+.contact-container .contact .rightside form .output_message.error {
+  background: #dc3545;
+}
+
+.contact-container .contact .rightside form .output_message.error:before {
+  font-family: FontAwesome;
+  content: "\f071";
+  padding-right: 10px;
+}
