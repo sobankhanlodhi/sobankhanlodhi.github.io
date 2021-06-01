@@ -24,16 +24,14 @@
             },
             onTransitionStart: function (options) {
                 setTimeout(function () {
-                    preloader.removeClass('loaded');
+                    nameloader.removeClass('loaded');
                 }, options.duration * .75);
             },
             onReady: function () {
-                preloader.addClass('loaded');
+                nameloader.addClass('loaded');
             }
         });
-		
-        /* ============================================================== */
-
+		        
         /* ============================================================== */
         /*  TEXT ROTATOR ANIMATION
         /* ============================================================== */
@@ -94,9 +92,9 @@
             e.preventDefault();
         });
 
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         /*  LINK TO PORTFOLIO SECTION
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
 		
 		$(".link-portfolio-two").on("click", function(e) {
 			var tabNum = $(this).index();
@@ -108,9 +106,9 @@
 			 e.preventDefault();
         });
 		
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         /*  AJAX CONTACT FORM
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
 
         $(".contactform").on("submit", function() {
             $(".output_message").text("Loading...");
@@ -138,9 +136,9 @@
             return false;
         });
 
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         /*  PAGE ANIMATION
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
 
         checkScreenSize();
 
@@ -161,9 +159,21 @@
             }, 250);
         });
 
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
+        /*  STOP VIDEOS WHEN CLICK DETECTED ON MENU LINKS
+        /* ============================================================== */
+
+		function stop_videos() {
+			var video = document.getElementById("video");
+			if (video.paused !== true && video.ended !== true) {
+				video.pause();
+			}
+			$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+		}
+
+        /* ============================================================== */
         /*  MAIN NAVIGATION MENU
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         
         $(".navigation > li, .stretchy-nav > li").on("click", function(e) {
             if (!$(this).hasClass("active")) {
@@ -194,9 +204,9 @@
             }
         });
 
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         /*  SHOW/HIDE SECTIONS
-        /* ----------------------------------------------------------- */
+        /* ============================================================== */
         
         if (window.location.hash && $('#link-' + window.location.hash.replace(/^#/, '')).length) {
             $('#link-' + window.location.hash.replace(/^#/, '')).trigger('click');
@@ -246,7 +256,66 @@
             stop_videos();
         });	
 
+        /* ============================================================== */
+        /*  PORTFOLIO SHOW SLIDE
+        /* ============================================================== */
 
+		var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+
+		$('.portfolio-section').find('ul a').on('click', function(event){
+			event.preventDefault();
+			var selected_member = $(this).data('type');
+			$('.project-info-container.'+selected_member+'').addClass('slide-in');
+			$('.close-project').addClass('is-visible');
+			
+			// firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
+			if( is_firefox ) {
+				$('.portfolio-container').addClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					$('.portfolio-container').addClass('overflow-hidden');
+				});
+			} else {
+				$('.portfolio-container').addClass('slide-out');
+				$('.portfolio-container').addClass('overflow-hidden');
+			}
+			
+			if ($(window).width() < 1025) {
+				$('#back-mobile').css('pointer-events','none');
+			}
+			
+
+		});
+
+		/* ============================================================== */
+        /*  PORTFOLIO HIDE SLIDE
+        /* ============================================================== */
+
+		$(document).on('click', '.close-project, .portfolio-overlay', function(event){
+			event.preventDefault();
+			$('.project-info-container').removeClass('slide-in');
+			$('.close-project').removeClass('is-visible');
+			stop_videos();
+			$(".cd-stretchy-nav").removeClass('lighter-in-portfolio');
+			if( is_firefox ) {
+				$('.portfolio-container').removeClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					$('.portfolio-container').removeClass('overflow-hidden');
+				});
+			} else {
+				$('.portfolio-container').removeClass('slide-out');
+				$('.portfolio-container').removeClass('overflow-hidden');
+			}
+			
+			if ($(window).width() < 1025) {
+				$('#back-mobile').css('pointer-events','auto');
+			}
+		});
+		
+		/* ============================================================== */
+        /*  SLIDER IN PORTFOLIO
+        /* ============================================================== */
+		$('.portfolio-slider').carousel({
+			pause: true,
+			interval: false
+		});
 
     });
 
