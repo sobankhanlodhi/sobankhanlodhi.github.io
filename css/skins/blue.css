@@ -102,3 +102,7 @@ body.blog .container-fluid.page-title .content-banner {
 #portfolio-items li a div {
 	background: #2196F3;
 }
+
+#certificates-items li a div {
+	background: #6C63FF;
+}

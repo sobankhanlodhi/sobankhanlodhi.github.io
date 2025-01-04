@@ -1868,6 +1868,106 @@ body.light .personal-info ul h6 {
 }
 
 
+/* CERTIFICATE
+============================================================================================ */
+
+.certificate-container {
+  position: relative;
+  z-index: 2;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.certificates-section ul {
+  width: 100%;
+}
+
+.certificates-section .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.certificates-section ul li {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+}
+
+#certificates-items {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#certificates-items li {
+  position: relative;
+}
+
+#certificates-items li a,
+#certificates-items li a img {
+  display: block;
+  position: relative;
+  border-radius: 4px;
+}
+
+#certificates-items li a {
+  overflow: hidden;
+}
+
+#certificates-items li a>div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s;
+}
+
+#certificates-items li a:hover>div {
+  opacity: 1;
+}
+
+#certificates-items li a div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#certificates-items li a div span {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body.light .cd-stretchy-nav.lighter-in-certificates ul a span {
+  color: rgba(255, 255, 255, .9);
+}
+
+
 /* CONTACT
 ============================================================================================ */
 
@@ -2599,6 +2699,18 @@ ul.social-intro li a:hover i {
   }
 
   .portfolio-section ul li,
+  .comments-form form .form-group,
+  .comments-form form .submit-form,
+  .contact-container .contact .rightside form .form-group {
+    margin-bottom: 24px;
+  }
+
+  .certificates-section .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .certificates-section ul li,
   .comments-form form .form-group,
   .comments-form form .submit-form,
   .contact-container .contact .rightside form .form-group {

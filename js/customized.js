@@ -314,6 +314,13 @@
             pause: true,
             interval: false
         });
+
+        /* ============================================================== */
+        /*  CERTIFICATES 
+        /* ============================================================== */
+        $("body.light #certificates-items li a").on('click', function () {
+            $(".cd-stretchy-nav").addClass('lighter-in-certificates');
+        });
     });
 
 })(jQuery);
