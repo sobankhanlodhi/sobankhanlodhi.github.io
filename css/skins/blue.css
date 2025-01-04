@@ -1,8 +1,8 @@
 /* =================================================================== */
 /* BLUE #2196F3
 ====================================================================== */
-.nav-container > div > ul li.active a,
-.nav-container > div > ul li:hover a,
+.nav-container>div>ul li.active a,
+.nav-container>div>ul li:hover a,
 .btn.btn-secondary,
 .page-title h2 span,
 .back-mobile,
@@ -25,31 +25,33 @@ body.blog.dark .comments-list .comment-reply:hover,
 .navigation li a i,
 .resume-items .item .card-header .year i.fa-caret-right,
 .badges h3 span,
-.chart-bar>.percent  {
+.chart-bar>.percent {
 	color: #2196F3;
 }
+
 .cd-stretchy-nav.nav-is-visible ul li.active a,
 .cd-stretchy-nav.nav-is-visible ul li.active a span,
 .cd-stretchy-nav.nav-is-visible ul li a:hover,
 .cd-stretchy-nav.nav-is-visible ul li a:hover span {
 	color: #2196F3 !important;
 }
+
 .chart-bar>.item-progress,
-.navigation li > div a span:after,
+.navigation li>div a span:after,
 .cd-stretchy-nav ul a::before,
-.nav-container > div > ul li:not(:last-child):hover:after,
-body.dark .nav-container > div > ul li:not(:last-child):hover:after,
-.nav-container > div > ul li.active:not(:last-child):after,
-body.dark .nav-container > div > ul li.active:not(:last-child):after,
+.nav-container>div>ul li:not(:last-child):hover:after,
+body.dark .nav-container>div>ul li:not(:last-child):hover:after,
+.nav-container>div>ul li.active:not(:last-child):after,
+body.dark .nav-container>div>ul li.active:not(:last-child):after,
 .contact-container ul.social-intro li a:hover,
 .carousel-controls,
 body.dark .carousel-controls,
 .resume-items .item a,
 #progress-line-container,
-#header > div.bg,
+#header>div.bg,
 .ah-headline.clip .ah-words-wrapper::after,
 .btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active ,
+.btn-secondary:not(:disabled):not(.disabled):active,
 .btn.btn-secondary:before,
 section#blog .post-date,
 .resume-items .item-label,
@@ -60,7 +62,7 @@ section#blog .post-date,
 .comments-form button:active,
 .back-mobile,
 .page-title .title-head-subtitle:before,
-.page-title .title-head-subtitle:after{
+.page-title .title-head-subtitle:after {
 	background-color: #2196F3;
 }
 
@@ -73,14 +75,14 @@ section#blog .post-date,
 
 .arrow {
 	border: 1px solid #2196F3;
-    border-width: 0 1px 1px 0;
+	border-width: 0 1px 1px 0;
 }
 
 .resume-items .item:before {
 	border-left: 1px solid #2196F3;
 }
 
-.resume-items .item .bullet{
+.resume-items .item .bullet {
 	border: 2px solid #2196F3;
 }
 
@@ -90,12 +92,13 @@ section#blog .post-date,
 
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active {
-	border-color:#2196F3;
+	border-color: #2196F3;
 }
 
 body.blog .container-fluid.page-title .content-banner {
-	border-bottom:8px solid #2196F3;
+	border-bottom: 8px solid #2196F3;
 }
+
 #portfolio-items li a div {
 	background: #2196F3;
 }
