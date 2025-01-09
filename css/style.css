@@ -1980,6 +1980,10 @@ body.light .cd-stretchy-nav.lighter-in-certificates ul a span {
 /* CONTACT
 ============================================================================================ */
 
+.contact-no-link {
+  color: white;
+}
+
 .contact {
   margin-top: -10px;
 }
