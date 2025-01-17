@@ -17,9 +17,6 @@
             classActive: 'animated',
             conditions: function (event, link) {
                 return
-                !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link)
-                    && !event.currentTarget.hasAttribute('data-lightgallery')
-                    && event.currentTarget.getAttribute('href') !== 'javascript:void(0);';
             },
             onTransitionStart: function (options) {
                 setTimeout(function () {
